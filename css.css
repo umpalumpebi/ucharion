@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@font-face {
+    font-family: 'factmedium';
+    src: url('fact-medium-webfont.woff2') format('woff2'),
+         url('fact-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    transition: 0.3s;
+    background-color: rgb(24,25,26);
+}
+
+html.dark-mode {
+    transition: 0.3s;
+    background-color: white;
+    color: white;
+}
+
+body {
+    transition: 0.3s;
+    background-color: rgb(24,25,26);
+    color: white;
+}
+
+body.dark-mode {
+    transition: 0.3s;
+    background-color: white;
+    color: black;
+}
+
+.header.dark-mode {
+    transition: 0.3s;
+    background-color: white;
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 6vh;
+    display: inline-block;
+}
+
+.header {
+    transition: 0.3s;
+    background-color: rgb(36,37,38);
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 6vh;
+    display: inline-block;
+}
+#facebook_logo {
+    width: 60px;
+    margin-top: 0.5vh;
+}
+#search {
+    background-color: rgb(58,59,60);
+    position: relative;
+    border: none;
+    border-radius: 25rem;
+    border-color: rgb(58,59,60);
+    padding-left: 2vw;
+    bottom: 2.3vh;
+    right: 1vw;
+    height: 4.2vh;
+    width: 10.5vw;
+    left: 0.2vw;
+    background-image: url(img/search.png);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: left;
+}
+
+input::placeholder {
+    font-size: 0.9rem;
+    color: rgb(164,168,173);
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    top: 0.2vh;
+    right: 0.2vw;
+}
+.buttons {
+    display: inline-block;
+    position: absolute;
+    left: 31vw;
+    bottom: 0.1vh;
+    top: 0;
+}
+.buttons button {
+    background-color: rgb(36,37,38);
+    border: none;
+    border-radius: 15px;
+    border-color: none;
+    width: 7vw;
+    height: 5.5vh;
+    display: table-row;
+    margin-top: 0.2vh;
+}
+
+#home_img, #watch_img, #friends_img, #group_img, #gaming_img {
+    height: 3vh;
+}
+
+#watch_img {
+    width: 1.5vw;
+}
+
+#gaming_img {
+    width: 1.7vw;
+    height: 2.5vh;
+    margin-bottom: 0.5vh;
+}
+
+@media (max-width: 700px) {
+    .buttons {
+        display: none;
+        top: auto;
+        left: auto;
+    }
+}
+.buttons button:hover {
+    background-color: rgba(58,59,60);
+    transition: 0.3s;
+}
+
+.right_side {
+    position: absolute;
+    border: none;
+    right: 1vw;
+    top: 0.5vh;
+    border-color: none;
+}
+
+.right_side button {
+    background-color: rgb(36,37,38);
+    border-style: none;
+    width: 2vw;
+    height: 4vh;
+    border: none;
+    border-radius: 25px;
+}
+
+.right_side button img {
+    background-color: rgb(36,37,38);
+    border: none;
+    border-radius: 15px;
+}
+
+#menu {
+    margin-right: 1vw;
+}
+
+#notifications {
+    position: relative;
+    bottom: 0.9vh;
+}
+
+#messenger {
+    position: relative;
+    bottom: 0.5vh;
+    margin-right: 0.2vw;
+}
+
+#notifications_img {
+    height: 2.2vh;
+    margin-right: 0.2vw;
+}
+
+#messenger_img {
+    height: 2.8vh;
+    margin-right: 0.3vw;
+}
+
+#menu_img {
+    height: 4.5vh;
+}
+
+#profile_right_img {
+    border: none;
+    border-radius: 25px;
+}
+
+#messenger:hover, #notifications:hover, #menu:hover {
+    transition: 0.3s;
+    background-color: rgba(58,59,60);
+}
+
+#profile_right:hover{
+    transition: 0.3s;
+    background-color: rgba(58,59,60);
+}
+
+#profile_left {
+    margin-top: 8vh;
+}
+
+.left {
+    width: 100%;
+    height: 100%;
+}
+
+.left button {
+    transition: 0.3s;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    background-color: rgb(24,25,26);
+    border-style: none;
+    align-items: left;
+    width: 18vw;
+    height: 5.3vh;
+    border-radius: 15px;
+    background-size: auto;
+}
+
+#profile_left_img {
+    border: none;
+    border-radius: 25px;
+    height: 5vh;
+}
+
+.friends_colored_class.dark-mode {
+    transition: 0.3s;
+    background-color: white;
+}
+
+.friends_colored_class.dark-mode:hover {
+    transition: 0.3s;
+    background-color: rgba(228,230,233);
+}
+
+
+.profile_left_class.dark-mode {
+    transition: 0.3s;
+    background-color: white;
+}
+
+.profile_left_class.dark-mode:hover {
+    transition: 0.3s;
+    background-color: rgba(228,230,233);
+}
+
+.memories_class.dark-mode {
+    transition: 0.3s;
+    background-color: white;
+}
+
+.memories_class.dark-mode:hover {
+    transition: 0.3s;
+    background-color: rgba(228,230,233);
+}
+
+.saved_class.dark-mode {
+    transition: 0.3s;
+    background-color: white;
+}
+
+.saved_class.dark-mode:hover {
+    transition: 0.3s;
+    background-color: rgba(228,230,233);
+}
+
+.most_recent_class.dark-mode {
+    transition: 0.3s;
+    background-color: white;
+}
+
+.most_recent_class.dark-mode:hover {
+    transition: 0.3s;
+    background-color: rgba(228,230,233);
+}
+
+.groups_colored_class.dark-mode {
+    transition: 0.3s;
+    background-color: white;
+}
+
+.groups_colored_class.dark-mode:hover {
+    transition: 0.3s;
+    background-color: rgba(228,230,233);
+}
+
+.see_more_class.dark-mode {
+    transition: 0.3s;
+    background-color: white;
+}
+
+.see_more_class.dark-mode:hover {
+    transition: 0.3s;
+    background-color: rgba(228,230,233);
+}
+
+.profile_left_a.dark-mode {
+    transition: 0.3s;
+    color: rgb(28,28,28);
+}
+
+.friends_a.dark-mode {
+    transition: 0.3s;
+    color: rgb(28,28,28);
+}
+
+.memories_a.dark-mode {
+    transition: 0.3s;
+    color: rgb(28,28,28);
+}
+
+.saved_a.dark-mode {
+    transition: 0.3s;
+    color: rgb(28,28,28);
+}
+
+
+.most_recent_a.dark-mode {
+    transition: 0.3s;
+    color: rgb(28,28,28);
+}
+
+
+.groups_a.dark-mode {
+    transition: 0.3s;
+    color: rgb(28,28,28);
+}
+
+
+.see_more_a.dark-mode {
+    transition: 0.3s;
+    color: rgb(28,28,28);
+}
+
+
+.left button img {
+    width: 2vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5vh;
+    object-fit: cover;
+    height: 100%;
+}
+
+.left button:hover {
+    background-color: rgba(58,59,60);
+}
+
+.left button a {
+    font-family: 'factmedium', Arial, sans-serif;
+    font-size: 13px;
+    position: relative;
+    margin-left: 2.5vw;
+    bottom: 3vh;
+    color: rgb(227,229,234);
+    justify-content: center;
+}
+
+.groups_a {
+    margin-top: 5px;
+}
+
+#group_colored_img {
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
